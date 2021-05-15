@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items1">
+        <item></item>
+        <item>Студгородок</item>
+    </string-array>
+
+    <string-array name="items2">
+        <item></item>
+        <item>ИКИТ</item>
+        <item>Корпус В</item>
+        <item>Корпус Д</item>
+        <item>Корпус Б</item>
+    </string-array>
+
+    <string-array name="items3">
+        <item></item>
+        <item>ИКИТ</item>
+        <item>Корпус В</item>
+        <item>Корпус Д</item>
+        <item>Корпус Б</item>
+    </string-array>
+</resources>
