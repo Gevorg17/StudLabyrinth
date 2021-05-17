@@ -1,0 +1,260 @@
+insert into map (id, name, length, width) values (1,'Студгородок',800,600);
+
+insert into point (id, name, status, x, y) values(1,'ИКИТ','transfer',640,390);
+insert into point (id, name, status, x, y) values(2,'Корпус Б','transfer',530,215);
+insert into point (id, name, status, x, y) values(3,'Корпус В','transfer',465,392);
+insert into point (id, name, status, x, y) values(4,'Корпус Д','transfer',645,150);
+insert into point (id, name, status, x, y) values(5,'Столовая','transfer',388,420);
+insert into point (id, name, status, x, y) values(6,'Дом Физкультуры','transfer',465,435);
+insert into point (id, name, status, x, y) values(7,'Бассейн','transfer',370,130);
+
+insert into point (id, name, status, x, y) values(8,'промежуточная 1','transitional',640,345);
+insert into point (id, name, status, x, y) values(9,'промежуточная 2','transitional',455,345);
+insert into point (id, name, status, x, y) values(10,'промежуточная 3','transitional',640,172);
+insert into point (id, name, status, x, y) values(11,'промежуточная 4','transitional',530,172);
+insert into point (id, name, status, x, y) values(12,'промежуточная 5','transitional',575,172);
+insert into point (id, name, status, x, y) values(13,'промежуточная 6','transitional',575,135);
+insert into point (id, name, status, x, y) values(14,'промежуточная 7','transitional',645,135);
+insert into point (id, name, status, x, y) values(15,'промежуточная 8','transitional',455,270);
+insert into point (id, name, status, x, y) values(16,'промежуточная 9','transitional',370,205);
+insert into point (id, name, status, x, y) values(17,'промежуточная 10','transitional',340,210);
+insert into point (id, name, status, x, y) values(18,'промежуточная 11','transitional',330,200);
+insert into point (id, name, status, x, y) values(19,'промежуточная 12','transitional',370,190);
+insert into point (id, name, status, x, y) values(20,'промежуточная 13','transitional',455,392);
+insert into point (id, name, status, x, y) values(21,'промежуточная 14','transitional',388,392);
+insert into point (id, name, status, x, y) values(22,'промежуточная 15','transitional',455,435);
+insert into point (id, name, status, x, y) values(23,'промежуточная 16','transitional',530,193);
+insert into point (id, name, status, x, y) values(24,'промежуточная 17','transitional',455,193);
+
+
+insert into way values (1,'ИКИТ','Корпус Б',1);
+insert into way values (2,'ИКИТ','Корпус В',1);
+insert into way values (3,'ИКИТ','Корпус Д',1);
+insert into way values (4,'ИКИТ','Столовая',1);
+insert into way values (5,'ИКИТ','Дом Физкультуры',1);
+insert into way values (6,'ИКИТ','Бассейн',1);
+insert into way values (7,'Корпус Б','Корпус В',1);
+insert into way values (8,'Корпус Б','Корпус Д',1);
+insert into way values (9,'Корпус Б','Столовая',1);
+insert into way values (10,'Корпус Б','Дом Физкультуры',1);
+insert into way values (11,'Корпус Б','Бассейн',1);
+insert into way values (12,'Корпус В','Корпус Д',1);
+insert into way values (13,'Корпус В','Столовая',1);
+insert into way values (14,'Корпус В','Дом Физкультуры',1);
+insert into way values (15,'Корпус В','Бассейн',1);
+insert into way values (16,'Корпус Д','Столовая',1);
+insert into way values (17,'Корпус Д','Дом Физкультуры',1);
+insert into way values (18,'Корпус Д','Бассейн',1);
+insert into way values (19,'Столовая','Дом Физкультуры',1);
+insert into way values (20,'Столовая','Бассейн',1);
+insert into way values (21,'Дом Физкультуры','Бассейн',1);
+
+insert into point_links values(1,1,1);
+insert into point_links values(1,10,2);
+insert into point_links values(1,11,3);
+insert into point_links values(1,2,4);
+
+insert into point_links values(2,1,1);
+insert into point_links values(2,8,2);
+insert into point_links values(2,9,3);
+insert into point_links values(2,20,4);
+insert into point_links values(2,3,5);
+
+insert into point_links values(3,1,1);
+insert into point_links values(3,10,2);
+insert into point_links values(3,12,3);
+insert into point_links values(3,13,4);
+insert into point_links values(3,14,5);
+insert into point_links values(3,4,6);
+
+insert into point_links values(4,1,1);
+insert into point_links values(4,8,2);
+insert into point_links values(4,9,3);
+insert into point_links values(4,20,4);
+insert into point_links values(4,21,5);
+insert into point_links values(4,5,6);
+
+insert into point_links values(5,1,1);
+insert into point_links values(5,8,2);
+insert into point_links values(5,9,3);
+insert into point_links values(5,22,4);
+insert into point_links values(5,6,5);
+
+insert into point_links values(6,1,1);
+insert into point_links values(6,8,2);
+insert into point_links values(6,9,3);
+insert into point_links values(6,15,4);
+insert into point_links values(6,16,5);
+insert into point_links values(6,17,6);
+insert into point_links values(6,18,7);
+insert into point_links values(6,19,8);
+insert into point_links values(6,7,9);
+
+
+insert into point_links values(7,2,1);
+insert into point_links values(7,23,2);
+insert into point_links values(7,24,3);
+insert into point_links values(7,20,4);
+insert into point_links values(7,3,5);
+
+insert into point_links values(8,2,1);
+insert into point_links values(8,11,2);
+insert into point_links values(8,12,3);
+insert into point_links values(8,13,4);
+insert into point_links values(8,14,5);
+insert into point_links values(8,4,6);
+
+insert into point_links values(9,2,1);
+insert into point_links values(9,23,2);
+insert into point_links values(9,24,3);
+insert into point_links values(9,20,4);
+insert into point_links values(9,21,5);
+insert into point_links values(9,5,6);
+
+insert into point_links values(10,2,1);
+insert into point_links values(10,23,2);
+insert into point_links values(10,24,3);
+insert into point_links values(10,22,4);
+insert into point_links values(10,6,5);
+
+insert into point_links values(11,2,1);
+insert into point_links values(11,23,2);
+insert into point_links values(11,24,3);
+insert into point_links values(11,16,4);
+insert into point_links values(11,17,5);
+insert into point_links values(11,18,6);
+insert into point_links values(11,19,7);
+insert into point_links values(11,7,8);
+
+insert into point_links values(12,3,1);
+insert into point_links values(12,20,2);
+insert into point_links values(12,24,3);
+insert into point_links values(12,23,4);
+insert into point_links values(12,11,5);
+insert into point_links values(12,12,6);
+insert into point_links values(12,13,7);
+insert into point_links values(12,14,8);
+insert into point_links values(12,4,9);
+
+insert into point_links values(13,3,1);
+insert into point_links values(13,21,2);
+insert into point_links values(13,5,3);
+
+insert into point_links values(14,3,1);
+insert into point_links values(14,20,2);
+insert into point_links values(14,22,3);
+insert into point_links values(14,6,4);
+
+insert into point_links values(15,3,1);
+insert into point_links values(15,20,2);
+insert into point_links values(15,15,3);
+insert into point_links values(15,16,4);
+insert into point_links values(15,17,5);
+insert into point_links values(15,18,6);
+insert into point_links values(15,19,7);
+insert into point_links values(15,7,8);
+
+insert into point_links values(16,4,1);
+insert into point_links values(16,14,2);
+insert into point_links values(16,13,3);
+insert into point_links values(16,12,4);
+insert into point_links values(16,11,5);
+insert into point_links values(16,23,6);
+insert into point_links values(16,24,7);
+insert into point_links values(16,20,8);
+insert into point_links values(16,21,9);
+insert into point_links values(16,5,10);
+
+insert into point_links values(17,4,1);
+insert into point_links values(17,14,2);
+insert into point_links values(17,13,3);
+insert into point_links values(17,12,4);
+insert into point_links values(17,11,5);
+insert into point_links values(17,23,6);
+insert into point_links values(17,24,7);
+insert into point_links values(17,22,8);
+insert into point_links values(17,6,9);
+
+insert into point_links values(18,4,1);
+insert into point_links values(18,14,2);
+insert into point_links values(18,13,3);
+insert into point_links values(18,12,4);
+insert into point_links values(18,11,5);
+insert into point_links values(18,23,6);
+insert into point_links values(18,24,7);
+insert into point_links values(18,16,8);
+insert into point_links values(18,17,9);
+insert into point_links values(18,18,10);
+insert into point_links values(18,19,11);
+insert into point_links values(18,7,12);
+
+insert into point_links values(19,5,1);
+insert into point_links values(19,21,2);
+insert into point_links values(19,20,3);
+insert into point_links values(19,22,4);
+insert into point_links values(19,6,5);
+
+insert into point_links values(20,5,1);
+insert into point_links values(20,21,2);
+insert into point_links values(20,20,3);
+insert into point_links values(20,15,4);
+insert into point_links values(20,16,5);
+insert into point_links values(20,17,6);
+insert into point_links values(20,18,7);
+insert into point_links values(20,19,8);
+insert into point_links values(20,7,9);
+
+insert into point_links values(21,6,1);
+insert into point_links values(21,22,2);
+insert into point_links values(21,20,3);
+insert into point_links values(21,15,4);
+insert into point_links values(21,16,5);
+insert into point_links values(21,17,6);
+insert into point_links values(21,18,7);
+insert into point_links values(21,19,8);
+insert into point_links values(21,7,9);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

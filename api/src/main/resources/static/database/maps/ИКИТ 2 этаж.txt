@@ -1,0 +1,1286 @@
+insert into map (id,name, length, width) values (3,'ИКИТ 2 этаж',1326,806);
+
+insert into point (id, name, status, x, y) values(65,'Лестница 1','transfer',435,120);
+insert into point (id, name, status, x, y)values(66,'Лестница 2','transfer',920,120);
+insert into point (id, name, status, x, y) values(67,'2-01','transfer',150,240);
+insert into point (id, name, status, x, y) values(68,'2-02','transfer',180,240);
+insert into point (id, name, status, x, y) values(69,'2-03','transfer',300,240);
+insert into point (id, name, status, x, y) values(70,'2-04','transfer',400,225);
+insert into point (id, name, status, x, y) values(71,'2-05','transfer',500,585);
+insert into point (id, name, status, x, y) values(72,'2-06','transfer',590,240);
+insert into point (id, name, status, x, y) values(73,'2-08','transfer',700,240);
+insert into point (id, name, status, x, y) values(74,'2-09','transfer',770,240);
+insert into point (id, name, status, x, y) values(75,'2-10','transfer',795,240);
+insert into point (id, name, status, x, y) values(76,'2-11','transfer',940,225);
+insert into point (id, name, status, x, y) values(77,'2-12','transfer',1040,240);
+insert into point (id, name, status, x, y) values(78,'2-13','transfer',1160,240);
+insert into point (id, name, status, x, y) values(79,'2-14','transfer',1200,240);
+insert into point (id, name, status, x, y) values(80,'2-15','transfer',1200,305);
+insert into point (id, name, status, x, y) values(81,'2-16','transfer',1105,305);
+insert into point (id, name, status, x, y) values(82,'2-17','transfer',920,305);
+insert into point (id, name, status, x, y) values(83,'2-19','transfer',350,305);
+insert into point (id, name, status, x, y) values(84,'2-20','transfer',150,305);
+
+insert into point (id, name, status, x, y) values(85,'промежуточная 1','transitional',435,275);
+insert into point (id, name, status, x, y) values(86,'промежуточная 2','transitional',920,275);
+insert into point (id, name, status, x, y) values(87,'промежуточная 3','transitional',150,275);
+insert into point (id, name, status, x, y) values(88,'промежуточная 4','transitional',180,275);
+insert into point (id, name, status, x, y) values(89,'промежуточная 5','transitional',300,275);
+insert into point (id, name, status, x, y) values(90,'промежуточная 6','transitional',350,275);
+insert into point (id, name, status, x, y) values(91,'промежуточная 7','transitional',435,225);
+insert into point (id, name, status, x, y) values(92,'промежуточная 8','transitional',500,275);
+insert into point (id, name, status, x, y) values(93,'промежуточная 9','transitional',590,275);
+insert into point (id, name, status, x, y) values(94,'промежуточная 10','transitional',700,275);
+insert into point (id, name, status, x, y) values(95,'промежуточная 11','transitional',770,275);
+insert into point (id, name, status, x, y) values(96,'промежуточная 12','transitional',795,275);
+insert into point (id, name, status, x, y) values(97,'промежуточная 13','transitional',920,225);
+insert into point (id, name, status, x, y) values(98,'промежуточная 14','transitional',1040,275);
+insert into point (id, name, status, x, y) values(99,'промежуточная 15','transitional',1105,275);
+insert into point (id, name, status, x, y) values(100,'промежуточная 16','transitional',1160,275);
+insert into point (id, name, status, x, y) values(101,'промежуточная 17','transitional',1200,275);
+
+
+insert into point_links values(212,65,1);
+insert into point_links values(212,85,2);
+insert into point_links values(212,86,3);
+insert into point_links values(212,66,4);
+
+insert into point_links values(213,65,1);
+insert into point_links values(213,85,2);
+insert into point_links values(213,87,3);
+insert into point_links values(213,67,4);
+
+insert into point_links values(214,65,1);
+insert into point_links values(214,85,2);
+insert into point_links values(214,88,3);
+insert into point_links values(214,68,4);
+
+insert into point_links values(215,65,1);
+insert into point_links values(215,85,2);
+insert into point_links values(215,89,3);
+insert into point_links values(215,69,4);
+
+insert into point_links values(216,65,1);
+insert into point_links values(216,91,2);
+insert into point_links values(216,70,3);
+
+insert into point_links values(217,65,1);
+insert into point_links values(217,85,2);
+insert into point_links values(217,92,3);
+insert into point_links values(217,71,4);
+
+insert into point_links values(218,65,1);
+insert into point_links values(218,85,2);
+insert into point_links values(218,93,3);
+insert into point_links values(218,72,4);
+
+insert into point_links values(219,65,1);
+insert into point_links values(219,85,2);
+insert into point_links values(219,94,3);
+insert into point_links values(219,73,4);
+
+insert into point_links values(220,65,1);
+insert into point_links values(220,85,2);
+insert into point_links values(220,95,3);
+insert into point_links values(220,74,4);
+
+insert into point_links values(221,65,1);
+insert into point_links values(221,85,2);
+insert into point_links values(221,96,3);
+insert into point_links values(221,75,4);
+
+insert into point_links values(222,65,1);
+insert into point_links values(222,85,2);
+insert into point_links values(222,86,3);
+insert into point_links values(222,97,4);
+insert into point_links values(222,76,5);
+
+insert into point_links values(223,65,1);
+insert into point_links values(223,85,2);
+insert into point_links values(223,98,3);
+insert into point_links values(223,77,4);
+
+insert into point_links values(224,65,1);
+insert into point_links values(224,85,2);
+insert into point_links values(224,100,3);
+insert into point_links values(224,78,4);
+
+insert into point_links values(225,65,1);
+insert into point_links values(225,85,2);
+insert into point_links values(225,101,3);
+insert into point_links values(225,79,4);
+
+insert into point_links values(226,65,1);
+insert into point_links values(226,85,2);
+insert into point_links values(226,101,3);
+insert into point_links values(226,80,4);
+
+insert into point_links values(227,65,1);
+insert into point_links values(227,85,2);
+insert into point_links values(227,99,3);
+insert into point_links values(227,81,4);
+
+insert into point_links values(228,65,1);
+insert into point_links values(228,85,2);
+insert into point_links values(228,86,3);
+insert into point_links values(228,82,4);
+
+insert into point_links values(229,65,1);
+insert into point_links values(229,85,2);
+insert into point_links values(229,90,3);
+insert into point_links values(229,83,4);
+
+insert into point_links values(230,65,1);
+insert into point_links values(230,85,2);
+insert into point_links values(230,87,3);
+insert into point_links values(230,84,4);
+
+
+insert into point_links values(231,66,1);
+insert into point_links values(231,86,2);
+insert into point_links values(231,87,3);
+insert into point_links values(231,67,4);
+
+insert into point_links values(232,66,1);
+insert into point_links values(232,86,2);
+insert into point_links values(232,88,3);
+insert into point_links values(232,68,4);
+
+insert into point_links values(233,66,1);
+insert into point_links values(233,86,2);
+insert into point_links values(233,89,3);
+insert into point_links values(233,69,4);
+
+insert into point_links values(234,66,1);
+insert into point_links values(234,86,2);
+insert into point_links values(234,85,3);
+insert into point_links values(234,91,4);
+insert into point_links values(234,70,5);
+
+insert into point_links values(235,66,1);
+insert into point_links values(235,86,2);
+insert into point_links values(235,92,3);
+insert into point_links values(235,71,4);
+
+insert into point_links values(236,66,1);
+insert into point_links values(236,86,2);
+insert into point_links values(236,93,3);
+insert into point_links values(236,72,4);
+
+insert into point_links values(237,66,1);
+insert into point_links values(237,86,2);
+insert into point_links values(237,94,3);
+insert into point_links values(237,73,4);
+
+insert into point_links values(238,66,1);
+insert into point_links values(238,86,2);
+insert into point_links values(238,95,3);
+insert into point_links values(238,74,4);
+
+insert into point_links values(239,66,1);
+insert into point_links values(239,86,2);
+insert into point_links values(239,96,3);
+insert into point_links values(239,75,4);
+
+insert into point_links values(240,66,1);
+insert into point_links values(240,86,2);
+insert into point_links values(240,76,5);
+
+insert into point_links values(241,66,1);
+insert into point_links values(241,86,2);
+insert into point_links values(241,98,3);
+insert into point_links values(241,77,4);
+
+insert into point_links values(242,66,1);
+insert into point_links values(242,86,2);
+insert into point_links values(242,100,3);
+insert into point_links values(242,78,4);
+
+insert into point_links values(243,66,1);
+insert into point_links values(243,86,2);
+insert into point_links values(243,101,3);
+insert into point_links values(243,79,4);
+
+insert into point_links values(244,66,1);
+insert into point_links values(244,86,2);
+insert into point_links values(244,101,3);
+insert into point_links values(244,80,4);
+
+insert into point_links values(245,66,1);
+insert into point_links values(245,86,2);
+insert into point_links values(245,99,3);
+insert into point_links values(245,81,4);
+
+insert into point_links values(246,66,1);
+insert into point_links values(246,86,2);
+insert into point_links values(246,86,3);
+insert into point_links values(246,82,4);
+
+insert into point_links values(247,66,1);
+insert into point_links values(247,86,2);
+insert into point_links values(247,90,3);
+insert into point_links values(247,83,4);
+
+insert into point_links values(248,66,1);
+insert into point_links values(248,86,2);
+insert into point_links values(248,87,3);
+insert into point_links values(248,84,4);
+
+
+
+insert into point_links values(249,67,1);
+insert into point_links values(249,87,2);
+insert into point_links values(249,88,3);
+insert into point_links values(249,68,4);
+
+insert into point_links values(250,67,1);
+insert into point_links values(250,87,2);
+insert into point_links values(250,89,3);
+insert into point_links values(250,69,4);
+
+insert into point_links values(251,67,1);
+insert into point_links values(251,87,2);
+insert into point_links values(251,85,3);
+insert into point_links values(251,91,4);
+insert into point_links values(251,70,5);
+
+insert into point_links values(252,67,1);
+insert into point_links values(252,87,2);
+insert into point_links values(252,92,3);
+insert into point_links values(252,71,4);
+
+insert into point_links values(253,67,1);
+insert into point_links values(253,87,2);
+insert into point_links values(253,93,3);
+insert into point_links values(253,72,4);
+
+insert into point_links values(254,67,1);
+insert into point_links values(254,87,2);
+insert into point_links values(254,94,3);
+insert into point_links values(254,73,4);
+
+insert into point_links values(255,67,1);
+insert into point_links values(255,87,2);
+insert into point_links values(255,95,3);
+insert into point_links values(255,74,4);
+
+insert into point_links values(256,67,1);
+insert into point_links values(256,87,2);
+insert into point_links values(256,96,3);
+insert into point_links values(256,75,4);
+
+insert into point_links values(257,67,1);
+insert into point_links values(257,87,2);
+insert into point_links values(257,86,3);
+insert into point_links values(257,97,4);
+insert into point_links values(257,76,5);
+
+insert into point_links values(258,67,1);
+insert into point_links values(258,87,2);
+insert into point_links values(258,98,3);
+insert into point_links values(258,77,4);
+
+insert into point_links values(259,67,1);
+insert into point_links values(259,87,2);
+insert into point_links values(259,100,3);
+insert into point_links values(259,78,4);
+
+insert into point_links values(260,67,1);
+insert into point_links values(260,87,2);
+insert into point_links values(260,101,3);
+insert into point_links values(260,79,4);
+
+insert into point_links values(261,67,1);
+insert into point_links values(261,87,2);
+insert into point_links values(261,101,3);
+insert into point_links values(261,80,4);
+
+insert into point_links values(262,67,1);
+insert into point_links values(262,87,2);
+insert into point_links values(262,99,3);
+insert into point_links values(262,81,4);
+
+insert into point_links values(263,67,1);
+insert into point_links values(263,87,2);
+insert into point_links values(263,87,3);
+insert into point_links values(263,82,4);
+
+insert into point_links values(264,67,1);
+insert into point_links values(264,87,2);
+insert into point_links values(264,90,3);
+insert into point_links values(264,83,4);
+
+insert into point_links values(265,67,1);
+insert into point_links values(265,84,2);
+
+
+
+insert into point_links values(266,68,1);
+insert into point_links values(266,88,2);
+insert into point_links values(266,89,3);
+insert into point_links values(266,69,4);
+
+insert into point_links values(267,68,1);
+insert into point_links values(267,88,2);
+insert into point_links values(267,85,3);
+insert into point_links values(267,91,4);
+insert into point_links values(267,70,5);
+
+insert into point_links values(268,68,1);
+insert into point_links values(268,88,2);
+insert into point_links values(268,92,3);
+insert into point_links values(268,71,4);
+
+insert into point_links values(269,68,1);
+insert into point_links values(269,88,2);
+insert into point_links values(269,93,3);
+insert into point_links values(269,72,4);
+
+insert into point_links values(270,68,1);
+insert into point_links values(270,88,2);
+insert into point_links values(270,94,3);
+insert into point_links values(270,73,4);
+
+insert into point_links values(271,68,1);
+insert into point_links values(271,88,2);
+insert into point_links values(271,95,3);
+insert into point_links values(271,74,4);
+
+insert into point_links values(272,68,1);
+insert into point_links values(272,88,2);
+insert into point_links values(272,96,3);
+insert into point_links values(272,75,4);
+
+insert into point_links values(273,68,1);
+insert into point_links values(273,88,2);
+insert into point_links values(273,86,3);
+insert into point_links values(273,97,4);
+insert into point_links values(273,76,5);
+
+insert into point_links values(274,68,1);
+insert into point_links values(274,88,2);
+insert into point_links values(274,98,3);
+insert into point_links values(274,77,4);
+
+insert into point_links values(275,68,1);
+insert into point_links values(275,88,2);
+insert into point_links values(275,100,3);
+insert into point_links values(275,78,4);
+
+insert into point_links values(276,68,1);
+insert into point_links values(276,88,2);
+insert into point_links values(276,101,3);
+insert into point_links values(276,79,4);
+
+insert into point_links values(277,68,1);
+insert into point_links values(277,88,2);
+insert into point_links values(277,101,3);
+insert into point_links values(277,80,4);
+
+insert into point_links values(278,68,1);
+insert into point_links values(278,88,2);
+insert into point_links values(278,99,3);
+insert into point_links values(278,81,4);
+
+insert into point_links values(279,68,1);
+insert into point_links values(279,88,2);
+insert into point_links values(279,88,3);
+insert into point_links values(279,82,4);
+
+insert into point_links values(280,68,1);
+insert into point_links values(280,88,2);
+insert into point_links values(280,90,3);
+insert into point_links values(280,83,4);
+
+insert into point_links values(281,68,1);
+insert into point_links values(281,88,2);
+insert into point_links values(281,87,3);
+insert into point_links values(281,84,4);
+
+
+
+
+insert into point_links values(282,69,1);
+insert into point_links values(282,89,2);
+insert into point_links values(282,85,3);
+insert into point_links values(282,91,4);
+insert into point_links values(282,70,5);
+
+insert into point_links values(283,69,1);
+insert into point_links values(283,89,2);
+insert into point_links values(283,92,3);
+insert into point_links values(283,71,4);
+
+insert into point_links values(284,69,1);
+insert into point_links values(284,89,2);
+insert into point_links values(284,93,3);
+insert into point_links values(284,72,4);
+
+insert into point_links values(285,69,1);
+insert into point_links values(285,89,2);
+insert into point_links values(285,94,3);
+insert into point_links values(285,73,4);
+
+insert into point_links values(286,69,1);
+insert into point_links values(286,89,2);
+insert into point_links values(286,95,3);
+insert into point_links values(286,74,4);
+
+insert into point_links values(287,69,1);
+insert into point_links values(287,89,2);
+insert into point_links values(287,96,3);
+insert into point_links values(287,75,4);
+
+insert into point_links values(288,69,1);
+insert into point_links values(288,89,2);
+insert into point_links values(288,86,3);
+insert into point_links values(288,97,4);
+insert into point_links values(288,76,5);
+
+insert into point_links values(289,69,1);
+insert into point_links values(289,89,2);
+insert into point_links values(289,98,3);
+insert into point_links values(289,77,4);
+
+insert into point_links values(290,69,1);
+insert into point_links values(290,89,2);
+insert into point_links values(290,100,3);
+insert into point_links values(290,78,4);
+
+insert into point_links values(291,69,1);
+insert into point_links values(291,89,2);
+insert into point_links values(291,101,3);
+insert into point_links values(291,79,4);
+
+insert into point_links values(292,69,1);
+insert into point_links values(292,89,2);
+insert into point_links values(292,101,3);
+insert into point_links values(292,80,4);
+
+insert into point_links values(293,69,1);
+insert into point_links values(293,89,2);
+insert into point_links values(293,99,3);
+insert into point_links values(293,81,4);
+
+insert into point_links values(294,69,1);
+insert into point_links values(294,89,2);
+insert into point_links values(294,89,3);
+insert into point_links values(294,82,4);
+
+insert into point_links values(295,69,1);
+insert into point_links values(295,89,2);
+insert into point_links values(295,90,3);
+insert into point_links values(295,83,4);
+
+insert into point_links values(296,69,1);
+insert into point_links values(296,89,2);
+insert into point_links values(296,87,3);
+insert into point_links values(296,84,4);
+
+
+
+
+insert into point_links values(297,70,1);
+insert into point_links values(297,91,2);
+insert into point_links values(297,85,3);
+insert into point_links values(297,92,4);
+insert into point_links values(297,71,5);
+
+insert into point_links values(298,70,1);
+insert into point_links values(298,91,2);
+insert into point_links values(298,85,3);
+insert into point_links values(298,93,4);
+insert into point_links values(298,72,5);
+
+insert into point_links values(299,70,1);
+insert into point_links values(299,91,2);
+insert into point_links values(299,85,3);
+insert into point_links values(299,94,4);
+insert into point_links values(299,73,5);
+
+insert into point_links values(300,70,1);
+insert into point_links values(300,91,2);
+insert into point_links values(300,85,3);
+insert into point_links values(300,95,4);
+insert into point_links values(300,74,5);
+
+insert into point_links values(301,70,1);
+insert into point_links values(301,91,2);
+insert into point_links values(301,85,3);
+insert into point_links values(301,96,4);
+insert into point_links values(301,75,5);
+
+insert into point_links values(302,70,1);
+insert into point_links values(302,91,2);
+insert into point_links values(302,85,3);
+insert into point_links values(302,86,4);
+insert into point_links values(302,97,5);
+insert into point_links values(302,76,6);
+
+insert into point_links values(303,70,1);
+insert into point_links values(303,91,2);
+insert into point_links values(303,85,3);
+insert into point_links values(303,98,4);
+insert into point_links values(303,77,5);
+
+insert into point_links values(304,70,1);
+insert into point_links values(304,91,2);
+insert into point_links values(304,85,3);
+insert into point_links values(304,100,4);
+insert into point_links values(304,78,5);
+
+insert into point_links values(305,70,1);
+insert into point_links values(305,91,2);
+insert into point_links values(305,85,3);
+insert into point_links values(305,101,4);
+insert into point_links values(305,79,5);
+
+insert into point_links values(306,70,1);
+insert into point_links values(306,91,2);
+insert into point_links values(306,85,3);
+insert into point_links values(306,101,4);
+insert into point_links values(306,80,5);
+
+insert into point_links values(307,70,1);
+insert into point_links values(307,91,2);
+insert into point_links values(307,85,3);
+insert into point_links values(307,99,4);
+insert into point_links values(307,81,5);
+
+insert into point_links values(308,70,1);
+insert into point_links values(308,91,2);
+insert into point_links values(308,85,3);
+insert into point_links values(308,86,4);
+insert into point_links values(308,82,5);
+
+insert into point_links values(309,70,1);
+insert into point_links values(309,91,2);
+insert into point_links values(309,85,3);
+insert into point_links values(309,90,4);
+insert into point_links values(309,83,5);
+
+insert into point_links values(310,70,1);
+insert into point_links values(310,91,2);
+insert into point_links values(310,85,3);
+insert into point_links values(310,87,4);
+insert into point_links values(310,84,5);
+
+
+
+insert into point_links values(311,71,1);
+insert into point_links values(311,92,2);
+insert into point_links values(311,93,3);
+insert into point_links values(311,72,4);
+
+insert into point_links values(312,71,1);
+insert into point_links values(312,92,2);
+insert into point_links values(312,94,3);
+insert into point_links values(312,73,4);
+
+insert into point_links values(313,71,1);
+insert into point_links values(313,92,2);
+insert into point_links values(313,95,3);
+insert into point_links values(313,74,4);
+
+insert into point_links values(314,71,1);
+insert into point_links values(314,92,2);
+insert into point_links values(314,96,3);
+insert into point_links values(314,75,4);
+
+insert into point_links values(315,71,1);
+insert into point_links values(315,92,2);
+insert into point_links values(315,86,3);
+insert into point_links values(315,97,4);
+insert into point_links values(315,76,5);
+
+insert into point_links values(316,71,1);
+insert into point_links values(316,92,2);
+insert into point_links values(316,98,3);
+insert into point_links values(316,77,4);
+
+insert into point_links values(317,71,1);
+insert into point_links values(317,92,2);
+insert into point_links values(317,100,3);
+insert into point_links values(317,78,4);
+
+insert into point_links values(318,71,1);
+insert into point_links values(318,92,2);
+insert into point_links values(318,101,3);
+insert into point_links values(318,79,4);
+
+insert into point_links values(319,71,1);
+insert into point_links values(319,92,2);
+insert into point_links values(319,101,3);
+insert into point_links values(319,80,4);
+
+insert into point_links values(320,71,1);
+insert into point_links values(320,92,2);
+insert into point_links values(320,99,3);
+insert into point_links values(320,81,4);
+
+insert into point_links values(321,71,1);
+insert into point_links values(321,92,2);
+insert into point_links values(321,92,3);
+insert into point_links values(321,82,4);
+
+insert into point_links values(322,71,1);
+insert into point_links values(322,92,2);
+insert into point_links values(322,90,3);
+insert into point_links values(322,83,4);
+
+insert into point_links values(323,71,1);
+insert into point_links values(323,92,2);
+insert into point_links values(323,87,3);
+insert into point_links values(323,84,4);
+
+
+
+
+insert into point_links values(324,72,1);
+insert into point_links values(324,93,2);
+insert into point_links values(324,94,3);
+insert into point_links values(324,73,4);
+
+insert into point_links values(325,72,1);
+insert into point_links values(325,93,2);
+insert into point_links values(325,95,3);
+insert into point_links values(325,74,4);
+
+insert into point_links values(326,72,1);
+insert into point_links values(326,93,2);
+insert into point_links values(326,96,3);
+insert into point_links values(326,75,4);
+
+insert into point_links values(327,72,1);
+insert into point_links values(327,93,2);
+insert into point_links values(327,86,3);
+insert into point_links values(327,97,4);
+insert into point_links values(327,76,5);
+
+insert into point_links values(328,72,1);
+insert into point_links values(328,93,2);
+insert into point_links values(328,98,3);
+insert into point_links values(328,77,4);
+
+insert into point_links values(329,72,1);
+insert into point_links values(329,93,2);
+insert into point_links values(329,100,3);
+insert into point_links values(329,78,4);
+
+insert into point_links values(330,72,1);
+insert into point_links values(330,93,2);
+insert into point_links values(330,101,3);
+insert into point_links values(330,79,4);
+
+insert into point_links values(331,72,1);
+insert into point_links values(331,93,2);
+insert into point_links values(331,101,3);
+insert into point_links values(331,80,4);
+
+insert into point_links values(332,72,1);
+insert into point_links values(332,93,2);
+insert into point_links values(332,99,3);
+insert into point_links values(332,81,4);
+
+insert into point_links values(333,72,1);
+insert into point_links values(333,93,2);
+insert into point_links values(333,93,3);
+insert into point_links values(333,82,4);
+
+insert into point_links values(334,72,1);
+insert into point_links values(334,93,2);
+insert into point_links values(334,90,3);
+insert into point_links values(334,83,4);
+
+insert into point_links values(335,72,1);
+insert into point_links values(335,93,2);
+insert into point_links values(335,87,3);
+insert into point_links values(335,84,4);
+
+
+
+
+insert into point_links values(336,73,1);
+insert into point_links values(336,94,2);
+insert into point_links values(336,95,3);
+insert into point_links values(336,74,4);
+
+insert into point_links values(337,73,1);
+insert into point_links values(337,94,2);
+insert into point_links values(337,96,3);
+insert into point_links values(337,75,4);
+
+insert into point_links values(338,73,1);
+insert into point_links values(338,94,2);
+insert into point_links values(338,86,3);
+insert into point_links values(338,97,4);
+insert into point_links values(338,76,5);
+
+insert into point_links values(339,73,1);
+insert into point_links values(339,94,2);
+insert into point_links values(339,98,3);
+insert into point_links values(339,77,4);
+
+insert into point_links values(340,73,1);
+insert into point_links values(340,94,2);
+insert into point_links values(340,100,3);
+insert into point_links values(340,78,4);
+
+insert into point_links values(341,73,1);
+insert into point_links values(341,94,2);
+insert into point_links values(341,101,3);
+insert into point_links values(341,79,4);
+
+insert into point_links values(342,73,1);
+insert into point_links values(342,94,2);
+insert into point_links values(342,101,3);
+insert into point_links values(342,80,4);
+
+insert into point_links values(343,73,1);
+insert into point_links values(343,94,2);
+insert into point_links values(343,99,3);
+insert into point_links values(343,81,4);
+
+insert into point_links values(344,73,1);
+insert into point_links values(344,94,2);
+insert into point_links values(344,94,3);
+insert into point_links values(344,82,4);
+
+insert into point_links values(345,73,1);
+insert into point_links values(345,94,2);
+insert into point_links values(345,90,3);
+insert into point_links values(345,83,4);
+
+insert into point_links values(346,73,1);
+insert into point_links values(346,94,2);
+insert into point_links values(346,87,3);
+insert into point_links values(346,84,4);
+
+
+
+
+insert into point_links values(347,74,1);
+insert into point_links values(347,95,2);
+insert into point_links values(347,96,3);
+insert into point_links values(347,75,4);
+
+insert into point_links values(348,74,1);
+insert into point_links values(348,95,2);
+insert into point_links values(348,86,3);
+insert into point_links values(348,97,4);
+insert into point_links values(348,76,5);
+
+insert into point_links values(349,74,1);
+insert into point_links values(349,95,2);
+insert into point_links values(349,98,3);
+insert into point_links values(349,77,4);
+
+insert into point_links values(350,74,1);
+insert into point_links values(350,95,2);
+insert into point_links values(350,100,3);
+insert into point_links values(350,78,4);
+
+insert into point_links values(351,74,1);
+insert into point_links values(351,95,2);
+insert into point_links values(351,101,3);
+insert into point_links values(351,79,4);
+
+insert into point_links values(352,74,1);
+insert into point_links values(352,95,2);
+insert into point_links values(352,101,3);
+insert into point_links values(352,80,4);
+
+insert into point_links values(353,74,1);
+insert into point_links values(353,95,2);
+insert into point_links values(353,99,3);
+insert into point_links values(353,81,4);
+
+insert into point_links values(354,74,1);
+insert into point_links values(354,95,2);
+insert into point_links values(354,95,3);
+insert into point_links values(354,82,4);
+
+insert into point_links values(355,74,1);
+insert into point_links values(355,95,2);
+insert into point_links values(355,90,3);
+insert into point_links values(355,83,4);
+
+insert into point_links values(356,74,1);
+insert into point_links values(356,95,2);
+insert into point_links values(356,87,3);
+insert into point_links values(356,84,4);
+
+
+
+
+insert into point_links values(357,75,1);
+insert into point_links values(357,96,2);
+insert into point_links values(357,86,3);
+insert into point_links values(357,97,4);
+insert into point_links values(357,76,5);
+
+insert into point_links values(358,75,1);
+insert into point_links values(358,96,2);
+insert into point_links values(358,98,3);
+insert into point_links values(358,77,4);
+
+insert into point_links values(359,75,1);
+insert into point_links values(359,96,2);
+insert into point_links values(359,100,3);
+insert into point_links values(359,78,4);
+
+insert into point_links values(360,75,1);
+insert into point_links values(360,96,2);
+insert into point_links values(360,101,3);
+insert into point_links values(360,79,4);
+
+insert into point_links values(361,75,1);
+insert into point_links values(361,96,2);
+insert into point_links values(361,101,3);
+insert into point_links values(361,80,4);
+
+insert into point_links values(362,75,1);
+insert into point_links values(362,96,2);
+insert into point_links values(362,99,3);
+insert into point_links values(362,81,4);
+
+insert into point_links values(363,75,1);
+insert into point_links values(363,96,2);
+insert into point_links values(363,96,3);
+insert into point_links values(363,82,4);
+
+insert into point_links values(364,75,1);
+insert into point_links values(364,96,2);
+insert into point_links values(364,90,3);
+insert into point_links values(364,83,4);
+
+insert into point_links values(365,75,1);
+insert into point_links values(365,96,2);
+insert into point_links values(365,87,3);
+insert into point_links values(365,84,4);
+
+
+
+insert into point_links values(366,76,1);
+insert into point_links values(366,97,2);
+insert into point_links values(366,86,3);
+insert into point_links values(366,98,4);
+insert into point_links values(366,77,5);
+
+insert into point_links values(367,76,1);
+insert into point_links values(367,97,2);
+insert into point_links values(367,86,3);
+insert into point_links values(367,100,4);
+insert into point_links values(367,78,5);
+
+insert into point_links values(368,76,1);
+insert into point_links values(368,97,2);
+insert into point_links values(368,86,3);
+insert into point_links values(368,101,4);
+insert into point_links values(368,79,5);
+
+insert into point_links values(369,76,1);
+insert into point_links values(369,97,2);
+insert into point_links values(369,86,3);
+insert into point_links values(369,101,4);
+insert into point_links values(369,80,5);
+
+insert into point_links values(370,76,1);
+insert into point_links values(370,97,2);
+insert into point_links values(370,86,3);
+insert into point_links values(370,99,4);
+insert into point_links values(370,81,5);
+
+insert into point_links values(371,76,1);
+insert into point_links values(371,97,2);
+insert into point_links values(371,86,3);
+insert into point_links values(371,82,4);
+
+insert into point_links values(372,76,1);
+insert into point_links values(372,97,2);
+insert into point_links values(372,86,2);
+insert into point_links values(372,90,3);
+insert into point_links values(372,83,4);
+
+insert into point_links values(373,76,1);
+insert into point_links values(373,97,2);
+insert into point_links values(373,86,2);
+insert into point_links values(373,87,3);
+insert into point_links values(373,84,4);
+
+
+insert into point_links values(374,77,1);
+insert into point_links values(374,98,2);
+insert into point_links values(374,100,3);
+insert into point_links values(374,78,4);
+
+insert into point_links values(375,77,1);
+insert into point_links values(375,98,2);
+insert into point_links values(375,101,3);
+insert into point_links values(375,79,4);
+
+insert into point_links values(376,77,1);
+insert into point_links values(376,98,2);
+insert into point_links values(376,101,3);
+insert into point_links values(376,80,4);
+
+insert into point_links values(377,77,1);
+insert into point_links values(377,98,2);
+insert into point_links values(377,99,3);
+insert into point_links values(377,81,4);
+
+insert into point_links values(378,77,1);
+insert into point_links values(378,98,2);
+insert into point_links values(378,86,3);
+insert into point_links values(378,82,4);
+
+insert into point_links values(379,77,1);
+insert into point_links values(379,98,2);
+insert into point_links values(379,90,3);
+insert into point_links values(379,83,4);
+
+insert into point_links values(380,77,1);
+insert into point_links values(380,98,2);
+insert into point_links values(380,87,3);
+insert into point_links values(380,84,4);
+
+
+
+
+
+insert into point_links values(381,78,1);
+insert into point_links values(381,100,2);
+insert into point_links values(381,101,3);
+insert into point_links values(381,79,4);
+
+insert into point_links values(382,78,1);
+insert into point_links values(382,100,2);
+insert into point_links values(382,101,3);
+insert into point_links values(382,80,4);
+
+insert into point_links values(383,78,1);
+insert into point_links values(383,100,2);
+insert into point_links values(383,99,3);
+insert into point_links values(383,81,4);
+
+insert into point_links values(384,78,1);
+insert into point_links values(384,100,2);
+insert into point_links values(384,86,3);
+insert into point_links values(384,82,4);
+
+insert into point_links values(385,78,1);
+insert into point_links values(385,100,2);
+insert into point_links values(385,90,3);
+insert into point_links values(385,83,4);
+
+insert into point_links values(386,78,1);
+insert into point_links values(386,100,2);
+insert into point_links values(386,87,3);
+insert into point_links values(386,84,4);
+
+
+
+
+insert into point_links values(387,79,1);
+insert into point_links values(387,101,2);
+insert into point_links values(387,80,3);
+
+insert into point_links values(388,79,1);
+insert into point_links values(388,101,2);
+insert into point_links values(388,99,3);
+insert into point_links values(388,81,4);
+
+insert into point_links values(389,79,1);
+insert into point_links values(389,101,2);
+insert into point_links values(389,86,3);
+insert into point_links values(389,82,4);
+
+insert into point_links values(390,79,1);
+insert into point_links values(390,101,2);
+insert into point_links values(390,90,3);
+insert into point_links values(390,83,4);
+
+insert into point_links values(391,79,1);
+insert into point_links values(391,101,2);
+insert into point_links values(391,87,3);
+insert into point_links values(391,84,4);
+
+
+
+
+
+insert into point_links values(392,80,1);
+insert into point_links values(392,101,2);
+insert into point_links values(392,99,3);
+insert into point_links values(392,81,4);
+
+insert into point_links values(393,80,1);
+insert into point_links values(393,101,2);
+insert into point_links values(393,86,3);
+insert into point_links values(393,82,4);
+
+insert into point_links values(394,80,1);
+insert into point_links values(394,101,2);
+insert into point_links values(394,90,3);
+insert into point_links values(394,83,4);
+
+insert into point_links values(395,80,1);
+insert into point_links values(395,101,2);
+insert into point_links values(395,87,3);
+insert into point_links values(395,84,4);
+
+
+
+
+
+insert into point_links values(396,81,1);
+insert into point_links values(396,99,2);
+insert into point_links values(396,86,3);
+insert into point_links values(396,82,4);
+
+insert into point_links values(397,81,1);
+insert into point_links values(397,99,2);
+insert into point_links values(397,90,3);
+insert into point_links values(397,83,4);
+
+insert into point_links values(398,81,1);
+insert into point_links values(398,99,2);
+insert into point_links values(398,87,3);
+insert into point_links values(398,84,4);
+
+
+
+
+insert into point_links values(399,82,1);
+insert into point_links values(399,86,2);
+insert into point_links values(399,90,3);
+insert into point_links values(399,83,4);
+
+insert into point_links values(400,82,1);
+insert into point_links values(400,86,2);
+insert into point_links values(400,87,3);
+insert into point_links values(400,84,4);
+
+
+
+
+
+
+insert into point_links values(401,83,1);
+insert into point_links values(401,90,2);
+insert into point_links values(401,87,3);
+insert into point_links values(401,84,4);
+
+
+
+########################################
+
+insert into way values (212,'Лестница 1','Лестница 2',3);
+insert into way values (213,'Лестница 1','2-01',3);
+insert into way values (214,'Лестница 1','2-02',3);
+insert into way values (215,'Лестница 1','2-03',3);
+insert into way values (216,'Лестница 1','2-04',3);
+insert into way values (217,'Лестница 1','2-05',3);
+insert into way values (218,'Лестница 1','2-06',3);
+insert into way values (219,'Лестница 1','2-08',3);
+insert into way values (220,'Лестница 1','2-09',3);
+insert into way values (221,'Лестница 1','2-10',3);
+insert into way values (222,'Лестница 1','2-11',3);
+insert into way values (223,'Лестница 1','2-12',3);
+insert into way values (224,'Лестница 1','2-13',3);
+insert into way values (225,'Лестница 1','2-14',3);
+insert into way values (226,'Лестница 1','2-15',3);
+insert into way values (227,'Лестница 1','2-16',3);
+insert into way values (228,'Лестница 1','2-17',3);
+insert into way values (229,'Лестница 1','2-19',3);
+insert into way values (230,'Лестница 1','2-20',3);
+
+insert into way values (231,'Лестница 2','2-01',3);
+insert into way values (232,'Лестница 2','2-02',3);
+insert into way values (233,'Лестница 2','2-03',3);
+insert into way values (234,'Лестница 2','2-04',3);
+insert into way values (235,'Лестница 2','2-05',3);
+insert into way values (236,'Лестница 2','2-06',3);
+insert into way values (237,'Лестница 2','2-08',3);
+insert into way values (238,'Лестница 2','2-09',3);
+insert into way values (239,'Лестница 2','2-10',3);
+insert into way values (240,'Лестница 2','2-11',3);
+insert into way values (241,'Лестница 2','2-12',3);
+insert into way values (242,'Лестница 2','2-13',3);
+insert into way values (243,'Лестница 2','2-14',3);
+insert into way values (244,'Лестница 2','2-15',3);
+insert into way values (245,'Лестница 2','2-16',3);
+insert into way values (246,'Лестница 2','2-17',3);
+insert into way values (247,'Лестница 2','2-19',3);
+insert into way values (248,'Лестница 2','2-20',3);
+
+insert into way values (249,'2-01','2-02',3);
+insert into way values (250,'2-01','2-03',3);
+insert into way values (251,'2-01','2-04',3);
+insert into way values (252,'2-01','2-05',3);
+insert into way values (253,'2-01','2-06',3);
+insert into way values (254,'2-01','2-08',3);
+insert into way values (255,'2-01','2-09',3);
+insert into way values (256,'2-01','2-10',3);
+insert into way values (257,'2-01','2-11',3);
+insert into way values (258,'2-01','2-12',3);
+insert into way values (259,'2-01','2-13',3);
+insert into way values (260,'2-01','2-14',3);
+insert into way values (261,'2-01','2-15',3);
+insert into way values (262,'2-01','2-16',3);
+insert into way values (263,'2-01','2-17',3);
+insert into way values (264,'2-01','2-19',3);
+insert into way values (265,'2-01','2-20',3);
+
+insert into way values (266,'2-02','2-03',3);
+insert into way values (267,'2-02','2-04',3);
+insert into way values (268,'2-02','2-05',3);
+insert into way values (269,'2-02','2-06',3);
+insert into way values (270,'2-02','2-08',3);
+insert into way values (271,'2-02','2-09',3);
+insert into way values (272,'2-02','2-10',3);
+insert into way values (273,'2-02','2-11',3);
+insert into way values (274,'2-02','2-12',3);
+insert into way values (275,'2-02','2-13',3);
+insert into way values (276,'2-02','2-14',3);
+insert into way values (277,'2-02','2-15',3);
+insert into way values (278,'2-02','2-16',3);
+insert into way values (279,'2-02','2-17',3);
+insert into way values (280,'2-02','2-19',3);
+insert into way values (281,'2-02','2-20',3);
+
+insert into way values (282,'2-03','2-04',3);
+insert into way values (283,'2-03','2-05',3);
+insert into way values (284,'2-03','2-06',3);
+insert into way values (285,'2-03','2-08',3);
+insert into way values (286,'2-03','2-09',3);
+insert into way values (287,'2-03','2-10',3);
+insert into way values (288,'2-03','2-11',3);
+insert into way values (289,'2-03','2-12',3);
+insert into way values (290,'2-03','2-13',3);
+insert into way values (291,'2-03','2-14',3);
+insert into way values (292,'2-03','2-15',3);
+insert into way values (293,'2-03','2-16',3);
+insert into way values (294,'2-03','2-17',3);
+insert into way values (295,'2-03','2-19',3);
+insert into way values (296,'2-03','2-20',3);
+
+insert into way values (297,'2-04','2-05',3);
+insert into way values (298,'2-04','2-06',3);
+insert into way values (299,'2-04','2-08',3);
+insert into way values (300,'2-04','2-09',3);
+insert into way values (301,'2-04','2-10',3);
+insert into way values (302,'2-04','2-11',3);
+insert into way values (303,'2-04','2-12',3);
+insert into way values (304,'2-04','2-13',3);
+insert into way values (305,'2-04','2-14',3);
+insert into way values (306,'2-04','2-15',3);
+insert into way values (307,'2-04','2-16',3);
+insert into way values (308,'2-04','2-17',3);
+insert into way values (309,'2-04','2-19',3);
+insert into way values (310,'2-04','2-20',3);
+
+insert into way values (311,'2-05','2-06',3);
+insert into way values (312,'2-05','2-08',3);
+insert into way values (313,'2-05','2-09',3);
+insert into way values (314,'2-05','2-10',3);
+insert into way values (315,'2-05','2-11',3);
+insert into way values (316,'2-05','2-12',3);
+insert into way values (317,'2-05','2-13',3);
+insert into way values (318,'2-05','2-14',3);
+insert into way values (319,'2-05','2-15',3);
+insert into way values (320,'2-05','2-16',3);
+insert into way values (321,'2-05','2-17',3);
+insert into way values (322,'2-05','2-19',3);
+insert into way values (323,'2-05','2-20',3);
+
+insert into way values (324,'2-06','2-08',3);
+insert into way values (325,'2-06','2-09',3);
+insert into way values (326,'2-06','2-10',3);
+insert into way values (327,'2-06','2-11',3);
+insert into way values (328,'2-06','2-12',3);
+insert into way values (329,'2-06','2-13',3);
+insert into way values (330,'2-06','2-14',3);
+insert into way values (331,'2-06','2-15',3);
+insert into way values (332,'2-06','2-16',3);
+insert into way values (333,'2-06','2-17',3);
+insert into way values (334,'2-06','2-19',3);
+insert into way values (335,'2-06','2-20',3);
+
+insert into way values (336,'2-08','2-09',3);
+insert into way values (337,'2-08','2-10',3);
+insert into way values (338,'2-08','2-11',3);
+insert into way values (339,'2-08','2-12',3);
+insert into way values (340,'2-08','2-13',3);
+insert into way values (341,'2-08','2-14',3);
+insert into way values (342,'2-08','2-15',3);
+insert into way values (343,'2-08','2-16',3);
+insert into way values (344,'2-08','2-17',3);
+insert into way values (345,'2-08','2-19',3);
+insert into way values (346,'2-08','2-20',3);
+
+insert into way values (347,'2-09','2-10',3);
+insert into way values (348,'2-09','2-11',3);
+insert into way values (349,'2-09','2-12',3);
+insert into way values (350,'2-09','2-13',3);
+insert into way values (351,'2-09','2-14',3);
+insert into way values (352,'2-09','2-15',3);
+insert into way values (353,'2-09','2-16',3);
+insert into way values (354,'2-09','2-17',3);
+insert into way values (355,'2-09','2-19',3);
+insert into way values (356,'2-09','2-20',3);
+
+insert into way values (357,'2-10','2-11',3);
+insert into way values (358,'2-10','2-12',3);
+insert into way values (359,'2-10','2-13',3);
+insert into way values (360,'2-10','2-14',3);
+insert into way values (361,'2-10','2-15',3);
+insert into way values (362,'2-10','2-16',3);
+insert into way values (363,'2-10','2-17',3);
+insert into way values (364,'2-10','2-19',3);
+insert into way values (365,'2-10','2-20',3);
+
+insert into way values (366,'2-11','2-12',3);
+insert into way values (367,'2-11','2-13',3);
+insert into way values (368,'2-11','2-14',3);
+insert into way values (369,'2-11','2-15',3);
+insert into way values (370,'2-11','2-16',3);
+insert into way values (371,'2-11','2-17',3);
+insert into way values (372,'2-11','2-19',3);
+insert into way values (373,'2-11','2-20',3);
+
+insert into way values (374,'2-12','2-13',3);
+insert into way values (375,'2-12','2-14',3);
+insert into way values (376,'2-12','2-15',3);
+insert into way values (377,'2-12','2-16',3);
+insert into way values (378,'2-12','2-17',3);
+insert into way values (379,'2-12','2-19',3);
+insert into way values (380,'2-12','2-20',3);
+
+insert into way values (381,'2-13','2-14',3);
+insert into way values (382,'2-13','2-15',3);
+insert into way values (383,'2-13','2-16',3);
+insert into way values (384,'2-13','2-17',3);
+insert into way values (385,'2-13','2-19',3);
+insert into way values (386,'2-13','2-20',3);
+
+insert into way values (387,'2-14','2-15',3);
+insert into way values (388,'2-14','2-16',3);
+insert into way values (389,'2-14','2-17',3);
+insert into way values (390,'2-14','2-19',3);
+insert into way values (391,'2-14','2-20',3);
+
+insert into way values (392,'2-15','2-16',3);
+insert into way values (393,'2-15','2-17',3);
+insert into way values (394,'2-15','2-19',3);
+insert into way values (395,'2-15','2-20',3);
+
+insert into way values (396,'2-16','2-17',3);
+insert into way values (397,'2-16','2-19',3);
+insert into way values (398,'2-16','2-20',3);
+
+insert into way values (399,'2-17','2-19',3);
+insert into way values (400,'2-17','2-20',3);
+
+insert into way values (401,'2-19','2-20',3);
+

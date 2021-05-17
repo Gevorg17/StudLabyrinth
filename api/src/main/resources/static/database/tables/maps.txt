@@ -1,0 +1,6 @@
+insert into map (id, name, length, width) values (1,'Студгородок',800,600);
+insert into map (id,name, length, width) values (2,'ИКИТ 1 этаж',1360,765);
+insert into map (id,name, length, width) values (3,'ИКИТ 2 этаж',1326,806);
+insert into map (id,name, length, width) values(4,'ИКИТ 3 этаж',1360,765);
+insert into map (id,name, length, width) values(5,'ИКИТ 4 этаж',1360,765);
+insert into map (id,name, length, width) values(6,'ИКИТ 5 этаж',1360,765);
