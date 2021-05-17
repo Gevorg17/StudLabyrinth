@@ -6,7 +6,10 @@ import com.shalo.studlabyrinth.models.Map;
 import com.shalo.studlabyrinth.models.Point;
 import com.shalo.studlabyrinth.models.Way;
 
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 import retrofit2.Call;
 import retrofit2.Response;
@@ -14,16 +17,14 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiService {
-    private final String REST_URL = "http://localhost:8080/api/";
-    private Api api;
+    private static final String REST_URL = "http://localhost:8080/api/";
 
-    public  ApiService(){
-        Retrofit apiConnection = new Retrofit.Builder()
+    private static Retrofit apiConnection = new Retrofit.Builder()
                 .baseUrl(REST_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        api = apiConnection.create(Api.class);
-    }
+    private static Api api = apiConnection.create(Api.class);
+
 
 
     public ArrayList<Point> getPoints() {
@@ -53,24 +54,22 @@ public class ApiService {
         }
     }
 
-    public ArrayList<Way> getWays() {
-        try {
-            ArrayList<Way> ways = new GetWays().execute().get();
-            return ways;
-        } catch (Exception e) {
-            e.getMessage();
-            return null;
-        }
+    public List<Way> getWays() throws IOException {
+        Call<List<Way>> call = api.getWays();
+        Response<List<Way>> response = call.execute();
+        List<Way> ways = response.body();
+
+        return ways;
     }
 
-    private class GetWays extends AsyncTask<Void, Void, ArrayList<Way>> {
+    private class GetWays extends AsyncTask<Void, Void, List<Way>> {
 
         @Override
-        protected ArrayList<Way> doInBackground(Void... voids) {
-            Call<ArrayList<Way>> call = api.getWays();
+        protected List<Way> doInBackground(Void... voids) {
+            Call<List<Way>> call = api.getWays();
             try {
-                Response<ArrayList<Way>> response = call.execute();
-                ArrayList<Way> ways = response.body();
+                Response<List<Way>> response = call.execute();
+                List<Way> ways = response.body();
 
                 return ways;
             } catch (Exception e) {
@@ -80,14 +79,13 @@ public class ApiService {
         }
     }
 
-    public ArrayList<Map> getMaps() {
-        try {
-            ArrayList<Map> maps = new GetMaps().execute().get();
-            return maps;
-        } catch (Exception e) {
-            e.getMessage();
-            return null;
-        }
+    public ArrayList<Map> getMaps() throws IOException {
+        Call<ArrayList<Map>> call = api.getMaps();
+        Response<ArrayList<Map>> response = call.execute();
+        ArrayList<Map> maps = response.body();
+
+        return maps;
+
     }
 
     private class GetMaps extends AsyncTask<Void, Void, ArrayList<Map>> {

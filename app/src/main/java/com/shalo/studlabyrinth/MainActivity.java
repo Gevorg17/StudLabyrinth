@@ -15,6 +15,7 @@ import com.shalo.studlabyrinth.models.Route;
 import com.shalo.studlabyrinth.services.RouteRepository;
 import com.shalo.studlabyrinth.services.WayFinder;
 
+import java.io.IOException;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
-    public void onClickMaps(View view) {
+    public void onClickMaps(View view) throws IOException {
         Route routeToSend = new Route(((Spinner) findViewById(R.id.MapName)).getSelectedItem().toString(),
                                       ((Spinner) findViewById(R.id.BeginningPointName)).getSelectedItem().toString(),
                                       ((Spinner) findViewById(R.id.endPointName)).getSelectedItem().toString());
