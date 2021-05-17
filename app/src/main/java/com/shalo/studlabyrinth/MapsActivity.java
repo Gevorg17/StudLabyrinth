@@ -3,6 +3,7 @@ package com.shalo.studlabyrinth;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -10,16 +11,24 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolylineOptions;
+import com.shalo.studlabyrinth.models.Point;
+
+import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private List<Point> points;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+
+        Bundle arguments = getIntent().getExtras();
+        points = (List<Point>) (Parcelable) arguments.get("points");
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -38,9 +47,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        PolylineOptions line = new PolylineOptions();
+
+        for (Point point : points)
+            line.add(new LatLng(point.getX(),point.getY()));
+
+        LatLng endPoint = line.getPoints().get(line.getPoints().size() - 1);
+
+        mMap.addMarker(new MarkerOptions().position(endPoint).title("Endpoint"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(endPoint));
+        mMap.addPolyline(line);
     }
 }

@@ -9,8 +9,8 @@ public class Point {
     private int id;
 
     private String name;
-    private int x;
-    private int y;
+    private double x;
+    private double y;
     private String status;
 
     private Set<Way> ways = new HashSet<>();
@@ -18,22 +18,22 @@ public class Point {
     public Point() {
     }
 
-    public Point(int x, int y) {
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public Point(int id, String name, int dx, int dy, String status) {
+    public Point(int id, String name, double x, double y, String status) {
         this.id = id;
         this.name = name;
-        this.x = dx;
-        this.y = dy;
+        this.x = x;
+        this.y = y;
         this.status = status;
     }
 
     public int calcDistance(Point other_point) {
-        int delta_x = this.x - other_point.x;
-        int delta_y = this.y - other_point.y;
+        double delta_x = this.x - other_point.x;
+        double delta_y = this.y - other_point.y;
         int distance = (int) Math.sqrt(Math.pow(delta_x, 2) + Math.pow(delta_y, 2));
 
         return distance;
@@ -63,20 +63,20 @@ public class Point {
         this.id = id;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public void setX(int dx) {
-        this.x = dx;
+    public void setX(double x) {
+        this.x = x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
-    public void setY(int dy) {
-        this.y = dy;
+    public void setY(double y) {
+        this.y = y;
     }
 
     public String getStatus() {
