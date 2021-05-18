@@ -5,6 +5,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.Spinner;
 
 import androidx.annotation.RequiresApi;
@@ -46,5 +48,47 @@ public class MainActivity extends AppCompatActivity {
     public void onClickHistory(View view) {
         Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
         startActivity(intent);
+    }
+
+    public void locationChanged(View view) {
+        Spinner mapName = findViewById(R.id.MapName);
+        Spinner beginningPoint = findViewById(R.id.BeginningPointName);
+        Spinner endPoint = findViewById(R.id.endPointName);
+
+        CheckBox location = findViewById(R.id.location);
+
+        if (location.isChecked()) {
+            ArrayAdapter<?> adapter =
+                    ArrayAdapter.createFromResource(this, R.array.mapNameCorps, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            mapName.setAdapter(adapter);
+
+            adapter = ArrayAdapter.createFromResource(this, R.array.beginningPointCorps, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            beginningPoint.setAdapter(adapter);
+
+            adapter = ArrayAdapter.createFromResource(this, R.array.endPointCorps, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            endPoint.setAdapter(adapter);
+        } else {
+            ArrayAdapter<?> adapter =
+                    ArrayAdapter.createFromResource(this, R.array.mapName, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            mapName.setAdapter(adapter);
+
+            adapter = ArrayAdapter.createFromResource(this, R.array.beginningPoint, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            beginningPoint.setAdapter(adapter);
+
+            adapter = ArrayAdapter.createFromResource(this, R.array.endPoint, android.R.layout.simple_spinner_item);
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            endPoint.setAdapter(adapter);
+        }
     }
 }

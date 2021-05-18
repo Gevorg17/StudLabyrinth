@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CorpusMapsActivity extends AppCompatActivity {
+public class CorpsMapsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,12 +15,12 @@ public class CorpusMapsActivity extends AppCompatActivity {
     }
 
     public void onClickMain2(View view) {
-        Intent intent = new Intent(CorpusMapsActivity.this, MainActivity.class);
+        Intent intent = new Intent(CorpsMapsActivity.this, MainActivity.class);
         startActivity(intent);
     }
 
     public void onClickHistory(View view) {
-        Intent intent = new Intent(CorpusMapsActivity.this, HistoryActivity.class);
+        Intent intent = new Intent(CorpsMapsActivity.this, HistoryActivity.class);
         startActivity(intent);
     }
 }

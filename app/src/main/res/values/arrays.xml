@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="items1">
-        <item></item>
-        <item>Студгородок</item>
-    </string-array>
+    <string-array name="mapName">
+    <item></item>
+    <item>Студгородок</item>
+</string-array>
 
-    <string-array name="items2">
+    <string-array name="beginningPoint">
         <item></item>
         <item>ИКИТ</item>
         <item>Корпус В</item>
@@ -13,11 +13,32 @@
         <item>Корпус Б</item>
     </string-array>
 
-    <string-array name="items3">
+    <string-array name="endPoint">
         <item></item>
         <item>ИКИТ</item>
         <item>Корпус В</item>
         <item>Корпус Д</item>
         <item>Корпус Б</item>
+    </string-array>
+
+    <string-array name="mapNameCorps">
+        <item></item>
+        <item>ИКИТ 1 этаж</item>
+    </string-array>
+
+    <string-array name="beginningPointCorps">
+        <item></item>
+        <item>1—17</item>
+        <item>1—19</item>
+        <item>1—15</item>
+        <item>1—16</item>
+    </string-array>
+
+    <string-array name="endPointCorps">
+        <item></item>
+        <item>4—07</item>
+        <item>4—23</item>
+        <item>4—10</item>
+        <item>4—11</item>
     </string-array>
 </resources>
