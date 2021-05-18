@@ -13,18 +13,14 @@ import java.io.IOException;
 import java.util.List;
 
 public class WayFinder {
-    private ApiService apiService;
+    private SearchAlgorithm algorithm;
 
-    public  WayFinder(){
-        apiService = new ApiService();
+    public  WayFinder(SearchAlgorithm algorithm){
+        this.algorithm = algorithm;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public List<Point> find(Route route) throws IOException {
-        Map currentMap = apiService.getMaps().stream().filter(map -> map.getName().equals(route.getMapName())).findFirst().get();
-
-        Way currentWay = currentMap.findWayByTwoPointNames(route.getBeginningPointName(), route.getEndPointName());
-
-        return currentWay.getPoints();
+        return  algorithm.search(route);
     }
 }

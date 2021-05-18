@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.shalo.studlabyrinth.models.Point;
 import com.shalo.studlabyrinth.models.Route;
+import com.shalo.studlabyrinth.models.model.AppSearchAlgorithm;
 import com.shalo.studlabyrinth.services.RouteRepository;
 import com.shalo.studlabyrinth.services.WayFinder;
 
@@ -37,10 +38,17 @@ public class MainActivity extends AppCompatActivity {
                                       ((Spinner) findViewById(R.id.BeginningPointName)).getSelectedItem().toString(),
                                       ((Spinner) findViewById(R.id.endPointName)).getSelectedItem().toString());
 
-        WayFinder finder = new WayFinder();
+        WayFinder finder = new WayFinder(new AppSearchAlgorithm());
         List<Point> points = finder.find(routeToSend);
 
-        Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+        CheckBox checkBox = findViewById(R.id.location);
+
+        Intent intent;
+        if (checkBox.isChecked()) {
+            intent = new Intent(MainActivity.this, CorpsMapsActivity.class);
+        }
+        else intent = new Intent(MainActivity.this, MapsActivity.class);
+
         intent.putExtra("points", (Parcelable) points);
         startActivity(intent);
     }

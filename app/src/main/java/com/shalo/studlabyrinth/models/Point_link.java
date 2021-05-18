@@ -4,10 +4,12 @@ public class Point_link {
 
     private int way_id;
     private int point_id;
+    private int number;
 
-    public Point_link(int way_id, int point_id) {
+    public Point_link(int way_id, int point_id, int number) {
         this.way_id = way_id;
         this.point_id = point_id;
+        this.number = number;
     }
 
     public int getWay_id() {
@@ -24,6 +26,14 @@ public class Point_link {
 
     public void setPoint_id(int point_id) {
         this.point_id = point_id;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.shalo.studlabyrinth;
 
 import com.shalo.studlabyrinth.models.Route;
+import com.shalo.studlabyrinth.services.ApiSearchAlgorithm;
 import com.shalo.studlabyrinth.services.ApiService;
 import com.shalo.studlabyrinth.services.WayFinder;
 
@@ -19,7 +20,7 @@ import static org.junit.Assert.*;
 public class ApiServiceTest {
     @Test
     public void addition_isCorrect() throws ExecutionException, InterruptedException, IOException {
-        WayFinder finder = new WayFinder();
+        WayFinder finder = new WayFinder(new ApiSearchAlgorithm());
 
         assertEquals(5, finder.find(new Route("Студгородок","ИКИТ","Корпус В")).size());
     }
