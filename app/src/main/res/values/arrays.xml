@@ -24,21 +24,201 @@
     <string-array name="mapNameCorps">
         <item></item>
         <item>ИКИТ 1 этаж</item>
+        <item>ИКИТ 2 этаж</item>
+        <item>ИКИТ 3 этаж</item>
+        <item>ИКИТ 4 этаж</item>
+        <item>ИКИТ 5 этаж</item>
     </string-array>
 
     <string-array name="beginningPointCorps">
         <item></item>
-        <item>1—17</item>
-        <item>1—19</item>
-        <item>1—15</item>
-        <item>1—16</item>
+        <item >1—01</item>
+        <item >1—02</item>
+        <item >1—03</item>
+        <item >1—09</item>
+        <item >1—10</item>
+        <item >1—11</item>
+        <item >1—12</item>
+        <item >1—13</item>
+        <item >1—14</item>
+        <item >1—15</item>
+        <item >1—16</item>
+        <item >1—17</item>
+        <item >1—18</item>
+        <item >1—19</item>
+        <item >1—20</item>
+        <item >1—21</item>
+
+        <item >2—01</item>
+        <item >2—02</item>
+        <item >2—03</item>
+        <item >2—04</item>
+        <item >2—05</item>
+        <item >2—06</item>
+        <item >2—08</item>
+        <item >2—09</item>
+        <item >2—10</item>
+        <item >2—11</item>
+        <item >2—12</item>
+        <item >2—13</item>
+        <item >2—14</item>
+        <item >2—15</item>
+        <item >2—16</item>
+        <item >2—17</item>
+        <item >2—19</item>
+        <item >2—20</item>
+
+        <item >3—01</item>
+        <item >3—02</item>
+        <item >3—03</item>
+        <item >3—06</item>
+        <item >3—07</item>
+        <item >3—09</item>
+        <item >3—10</item>
+        <item >3—11</item>
+        <item >3—12</item>
+        <item >3—13</item>
+        <item >3—14</item>
+        <item >3—15</item>
+        <item >3—16</item>
+        <item >3—17</item>
+        <item >3—18</item>
+        <item >3—19</item>
+        <item >3—20</item>
+        <item >3—21</item>
+        <item >3—22</item>
+        <item >3—23</item>
+
+        <item >4—01</item>
+        <item >4—02</item>
+        <item >4—06</item>
+        <item >4—07</item>
+        <item >4—09</item>
+        <item >4—10</item>
+        <item >4—11</item>
+        <item >4—12</item>
+        <item >4—13</item>
+        <item >4—15</item>
+        <item >4—16</item>
+        <item >4—17</item>
+        <item >4—18</item>
+        <item >4—19</item>
+        <item >4—20</item>
+        <item >4—21</item>
+        <item >4—22</item>
+        <item >4—23</item>
+        <item >4—24</item>
+        <item >4—25</item>
+
+        <item >5—01</item>
+        <item >5—02</item>
+        <item >5—06</item>
+        <item >5—07</item>
+        <item >5—10</item>
+        <item >5—11</item>
+        <item >5—12</item>
+        <item >5—13</item>
+        <item >5—14</item>
+        <item >5—15</item>
+        <item >5—16</item>
+        <item >5—17</item>
+        <item >5—19</item>
+        <item >5—20</item>
     </string-array>
 
     <string-array name="endPointCorps">
         <item></item>
-        <item>4—07</item>
-        <item>4—23</item>
-        <item>4—10</item>
-        <item>4—11</item>
+        <item >1—01</item>
+        <item >1—02</item>
+        <item >1—03</item>
+        <item >1—09</item>
+        <item >1—10</item>
+        <item >1—11</item>
+        <item >1—12</item>
+        <item >1—13</item>
+        <item >1—14</item>
+        <item >1—15</item>
+        <item >1—16</item>
+        <item >1—17</item>
+        <item >1—18</item>
+        <item >1—19</item>
+        <item >1—20</item>
+        <item >1—21</item>
+
+        <item >2—01</item>
+        <item >2—02</item>
+        <item >2—03</item>
+        <item >2—04</item>
+        <item >2—05</item>
+        <item >2—06</item>
+        <item >2—08</item>
+        <item >2—09</item>
+        <item >2—10</item>
+        <item >2—11</item>
+        <item >2—12</item>
+        <item >2—13</item>
+        <item >2—14</item>
+        <item >2—15</item>
+        <item >2—16</item>
+        <item >2—17</item>
+        <item >2—19</item>
+        <item >2—20</item>
+
+        <item >3—01</item>
+        <item >3—02</item>
+        <item >3—03</item>
+        <item >3—06</item>
+        <item >3—07</item>
+        <item >3—09</item>
+        <item >3—10</item>
+        <item >3—11</item>
+        <item >3—12</item>
+        <item >3—13</item>
+        <item >3—14</item>
+        <item >3—15</item>
+        <item >3—16</item>
+        <item >3—17</item>
+        <item >3—18</item>
+        <item >3—19</item>
+        <item >3—20</item>
+        <item >3—21</item>
+        <item >3—22</item>
+        <item >3—23</item>
+
+        <item >4—01</item>
+        <item >4—02</item>
+        <item >4—06</item>
+        <item >4—07</item>
+        <item >4—09</item>
+        <item >4—10</item>
+        <item >4—11</item>
+        <item >4—12</item>
+        <item >4—13</item>
+        <item >4—15</item>
+        <item >4—16</item>
+        <item >4—17</item>
+        <item >4—18</item>
+        <item >4—19</item>
+        <item >4—20</item>
+        <item >4—21</item>
+        <item >4—22</item>
+        <item >4—23</item>
+        <item >4—24</item>
+        <item >4—25</item>
+
+        <item >5—01</item>
+        <item >5—02</item>
+        <item >5—06</item>
+        <item >5—07</item>
+        <item >5—10</item>
+        <item >5—11</item>
+        <item >5—12</item>
+        <item >5—13</item>
+        <item >5—14</item>
+        <item >5—15</item>
+        <item >5—16</item>
+        <item >5—17</item>
+        <item >5—19</item>
+        <item >5—20</item>
     </string-array>
 </resources>

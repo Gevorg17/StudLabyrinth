@@ -47,15 +47,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        PolylineOptions line = new PolylineOptions();
+//        PolylineOptions line = new PolylineOptions();
+//
+//        for (Point point : points)
+//            line.add(new LatLng(point.getX(),point.getY()));
+//
+//        LatLng endPoint = line.getPoints().get(line.getPoints().size() - 1);
+//
+//        mMap.addMarker(new MarkerOptions().position(endPoint).title("Endpoint"));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(endPoint));
+//        mMap.addPolyline(line);
 
-        for (Point point : points)
-            line.add(new LatLng(point.getX(),point.getY()));
-
-        LatLng endPoint = line.getPoints().get(line.getPoints().size() - 1);
-
-        mMap.addMarker(new MarkerOptions().position(endPoint).title("Endpoint"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(endPoint));
-        mMap.addPolyline(line);
+        LatLng sydney = new LatLng(55.99656729682419, 92.7964995583891);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }
