@@ -1,9 +1,13 @@
 package com.shalo.studlabyrinth.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Point {
+public class Point implements Serializable {
 
 
     private int id;

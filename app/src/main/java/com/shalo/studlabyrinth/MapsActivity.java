@@ -14,6 +14,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.shalo.studlabyrinth.models.Point;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
@@ -26,8 +27,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
-        Bundle arguments = getIntent().getExtras();
-        points = (List<Point>) (Parcelable) arguments.get("points");
+        Bundle arguments = getIntent().getExtras().getBundle("points");
+        int pointCount = arguments.getInt("pointNumber");
+
+        points = new ArrayList<>();
+
+        for(int i = 0; i < pointCount; i++){
+            points.add((Point)arguments.getSerializable("point" + (i + 1)));
+        }
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);

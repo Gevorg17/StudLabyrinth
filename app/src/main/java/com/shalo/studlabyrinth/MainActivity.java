@@ -66,8 +66,13 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("map", routeToSend.getMapName());
         }
         else {
+            Bundle bundle = new Bundle();
             intent = new Intent(MainActivity.this, MapsActivity.class);
-            intent.putExtra("points", (Parcelable) points);
+            bundle.putInt("pointNumber",points.size());
+            for (int i = 0; i < points.size(); i++) {
+                bundle.putSerializable("point" + (i + 1),(points.get(i)));
+            }
+            intent.putExtra("points",bundle);
         }
 
         startActivity(intent);
