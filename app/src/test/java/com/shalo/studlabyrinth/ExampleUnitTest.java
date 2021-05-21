@@ -2,6 +2,7 @@ package com.shalo.studlabyrinth;
 
 import com.shalo.studlabyrinth.models.Route;
 import com.shalo.studlabyrinth.models.model.AppSearchAlgorithm;
+import com.shalo.studlabyrinth.models.model.DBbringer;
 import com.shalo.studlabyrinth.services.WayFinder;
 
 import org.junit.Test;
@@ -18,7 +19,8 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws IOException {
-        WayFinder finder = new WayFinder(new AppSearchAlgorithm());
-        assertEquals(5, finder.find(new Route("Студгородок","Корпус В","ИКИТ")).size());
+        String points = DBbringer.getPoints();
+        System.out.println(points);
+        assertEquals(false,points.isEmpty());
     }
 }

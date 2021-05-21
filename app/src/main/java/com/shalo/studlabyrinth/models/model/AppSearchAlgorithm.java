@@ -22,15 +22,28 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class AppSearchAlgorithm implements SearchAlgorithm {
+
+    private String points;
+    private String maps;
+    private String ways;
+    private String pointLinks;
+
+    public AppSearchAlgorithm(String points, String maps, String ways, String pointLinks) {
+        this.points = points;
+        this.maps = maps;
+        this.ways = ways;
+        this.pointLinks = pointLinks;
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public List<Point> search(Route route) throws IOException {
         ConverterMachine machine = new ConverterMachine();
 
-        ArrayList<Point> points = (ArrayList<Point>) machine.convert(DBbringer.getPoints(),"point");
-        ArrayList<Map> maps = (ArrayList<Map>) machine.convert(DBbringer.getMaps(),"map");
-        ArrayList<Way> ways = (ArrayList<Way>) machine.convert(DBbringer.getWays(),"way");
-        ArrayList<Point_link> point_links = (ArrayList<Point_link>) machine.convert(DBbringer.getPointLinks(),"point_link");
+        ArrayList<Point> points = (ArrayList<Point>) machine.convert(this.points,"point");
+        ArrayList<Map> maps = (ArrayList<Map>) machine.convert(this.maps,"map");
+        ArrayList<Way> ways = (ArrayList<Way>) machine.convert(this.ways,"way");
+        ArrayList<Point_link> point_links = (ArrayList<Point_link>) machine.convert(this.pointLinks,"point_link");
 
 
         Map currentMap = maps.stream().filter(map -> map.getName().equals(route.getMapName())).findFirst().get();

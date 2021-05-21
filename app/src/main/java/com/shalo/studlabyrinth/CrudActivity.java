@@ -15,14 +15,11 @@ public class CrudActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         repository = new RouteRepository(this);
-
         repository.Insert(new Route("1","1","1"));
         repository.Insert(new Route("2","2","2"));
         repository.Insert(new Route("3","3","3"));
-
         System.out.println(repository.Select(1));
         System.out.println(repository.Select().size());
-
         repository.Delete(3);
         System.out.println(repository.Select().size());
 

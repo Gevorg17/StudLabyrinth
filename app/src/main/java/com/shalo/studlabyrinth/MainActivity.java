@@ -38,7 +38,13 @@ public class MainActivity extends AppCompatActivity {
                                       ((Spinner) findViewById(R.id.BeginningPointName)).getSelectedItem().toString(),
                                       ((Spinner) findViewById(R.id.endPointName)).getSelectedItem().toString());
 
-        WayFinder finder = new WayFinder(new AppSearchAlgorithm());
+        repository.Insert(routeToSend);
+        WayFinder finder = new WayFinder(new AppSearchAlgorithm(
+                getString(R.string.point),
+                getString(R.string.maps),
+                getString(R.string.ways),
+                getString(R.string.point_links)
+        ));
         List<Point> points = finder.find(routeToSend);
 
         CheckBox checkBox = findViewById(R.id.location);
