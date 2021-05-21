@@ -39,17 +39,32 @@ public class MainActivity extends AppCompatActivity {
                                       ((Spinner) findViewById(R.id.endPointName)).getSelectedItem().toString());
 
         WayFinder finder = new WayFinder(new AppSearchAlgorithm());
-        List<Point> points = finder.find(routeToSend);
-
+//        List<Point> points = finder.find(routeToSend);
+//
         CheckBox checkBox = findViewById(R.id.location);
-
+//
         Intent intent;
         if (checkBox.isChecked()) {
             intent = new Intent(MainActivity.this, CorpsMapsActivity.class);
-        }
-        else intent = new Intent(MainActivity.this, MapsActivity.class);
 
-        intent.putExtra("points", (Parcelable) points);
+            if (routeToSend.getBeginningPointName().charAt(0) != routeToSend.getEndPointName().charAt(0)) {
+                //        intent.putExtra("points", (Parcelable) points);
+                intent.putExtra("firstMap", routeToSend.getMapName());
+                String secondMap = routeToSend.getMapName().replace(routeToSend.getMapName().charAt(5), routeToSend.getEndPointName().charAt(0));
+                intent.putExtra("secondMap", secondMap);
+            }
+            else {
+                //        intent.putExtra("points", (Parcelable) points);
+                intent.putExtra("firstMap", routeToSend.getMapName());
+            }
+            //        intent.putExtra("points", (Parcelable) points);
+            intent.putExtra("map", routeToSend.getMapName());
+        }
+        else {
+            intent = new Intent(MainActivity.this, MapsActivity.class);
+            //        intent.putExtra("points", (Parcelable) points);
+        }
+
         startActivity(intent);
     }
 
